@@ -1,0 +1,222 @@
+{
+  "product": "Tradewind DealFlow",
+  "version": "1.0.0",
+  "updated": "2026-08-14",
+  "doctrine": {
+    "noGate": "Tradewind does not invent stage gates that compress uncertainty into a silent pass. Authorization boundaries and operator decisions are hard. Product theater gates are forbidden. Evidence stays visible until a human resolves or defers it.",
+    "provenance": "Every normalized fact retains source identity and record boundary.",
+    "actionBoundary": "Offers, contracts, assignments, and outreach require an explicit operator decision."
+  },
+  "pillars": [
+    {
+      "id": "authorized-intake",
+      "name": "Authorized intake",
+      "weight": 1.0,
+      "description": "Only approved channels may create operating records. Open-ended scraping is not the intake model."
+    },
+    {
+      "id": "source-provenance",
+      "name": "Source provenance",
+      "weight": 1.2,
+      "description": "Normalized facts keep the source and boundary needed for later review."
+    },
+    {
+      "id": "conflict-visibility",
+      "name": "Conflict visibility",
+      "weight": 1.2,
+      "description": "Competing values stay attached to evidence; the system never silently overwrites."
+    },
+    {
+      "id": "typed-state",
+      "name": "Typed state honesty",
+      "weight": 1.0,
+      "description": "Incomplete intake, ready-for-review, conflict, and follow-up states stay distinct."
+    },
+    {
+      "id": "operator-control",
+      "name": "Operator control",
+      "weight": 1.3,
+      "description": "Automation stops at the action boundary. Humans decide what happens next."
+    },
+    {
+      "id": "underwriting-honesty",
+      "name": "Underwriting honesty",
+      "weight": 1.3,
+      "description": "Refuse to invent ARVs, comps, or distress facts. Log blocks instead of guessing."
+    },
+    {
+      "id": "legal-guardrails",
+      "name": "Legal guardrails",
+      "weight": 1.4,
+      "description": "Jurisdiction disclosures and attorney-close constraints are non-negotiable product behavior."
+    },
+    {
+      "id": "cost-clarity",
+      "name": "Dollar cost clarity",
+      "weight": 0.8,
+      "description": "Every feature carries an explicit dollar ledger entry for build, run, and risk cost."
+    }
+  ],
+  "churnDrivers": [
+    {
+      "id": "silent-overwrite",
+      "name": "Silent overwrite",
+      "severity": "Operators lose trust when a second source replaces the first without a review queue."
+    },
+    {
+      "id": "auto-action",
+      "name": "Auto-action past the boundary",
+      "severity": "Unattended offers, dials, or assignment blasts create legal and reputation risk."
+    },
+    {
+      "id": "opaque-score",
+      "name": "Opaque composite score",
+      "severity": "Compressed scores hide which evidence failed and invite rubber-stamp decisions."
+    },
+    {
+      "id": "fabricated-value",
+      "name": "Fabricated underwriting",
+      "severity": "Guessed ARVs and fake comps destroy downstream negotiation math."
+    },
+    {
+      "id": "duplicate-action",
+      "name": "Non-idempotent re-ingest",
+      "severity": "Repeated intake that duplicates outreach or state transitions burns buyers and sellers."
+    },
+    {
+      "id": "gate-theater",
+      "name": "Gate theater",
+      "severity": "Fake approval steps that do not inspect evidence waste time and teach operators to ignore controls."
+    },
+    {
+      "id": "lost-provenance",
+      "name": "Lost provenance",
+      "severity": "Facts without sources cannot be defended in review or dispute."
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "id": "provenance-and-conflicts",
+      "title": "Provenance + conflict review",
+      "outcome": "Every material field is attributable; disagreements enter an operator queue."
+    },
+    {
+      "rank": 2,
+      "id": "action-boundary",
+      "title": "Hard action boundary",
+      "outcome": "No offer, contract, assignment, or outreach leaves the system without an explicit decision."
+    },
+    {
+      "rank": 3,
+      "id": "honest-underwriting",
+      "title": "Honest underwriting",
+      "outcome": "Underwriting refuses insufficient comps and never fabricates values."
+    },
+    {
+      "rank": 4,
+      "id": "typed-pipeline",
+      "title": "Typed pipeline states",
+      "outcome": "Illegal transitions are impossible; audit events cover automated and human steps."
+    },
+    {
+      "rank": 5,
+      "id": "cost-ledger",
+      "title": "Dollar cost ledger",
+      "outcome": "Build/run/risk dollars are attached to every shipped feature for permanent review."
+    }
+  ],
+  "scoringDimensions": [
+    {
+      "id": "pillarAlignment",
+      "name": "Pillar alignment",
+      "max": 40,
+      "description": "How directly the feature strengthens one or more weighted pillars."
+    },
+    {
+      "id": "churnReduction",
+      "name": "Churn reduction",
+      "max": 20,
+      "description": "How much the feature removes a named churn driver."
+    },
+    {
+      "id": "priorityFit",
+      "name": "Priority fit",
+      "max": 20,
+      "description": "Fit to current Priorities 1–5 (higher ranks score higher)."
+    },
+    {
+      "id": "operatorClarity",
+      "name": "Operator clarity",
+      "max": 10,
+      "description": "Whether an operator can explain the feature outcome without a hidden model."
+    },
+    {
+      "id": "reversibility",
+      "name": "Reversibility",
+      "max": 10,
+      "description": "How safely the feature can be rolled back or deferred without corrupting state."
+    }
+  ],
+  "hardFails": [
+    {
+      "id": "fabricates-data",
+      "description": "Invented comps, ARVs, contacts, or distress facts."
+    },
+    {
+      "id": "silent-overwrite",
+      "description": "Overwrites a sourced field without preserving the prior value and opening review."
+    },
+    {
+      "id": "crosses-action-boundary",
+      "description": "Sends offers, dials, contracts, or assignments without an explicit operator decision."
+    },
+    {
+      "id": "removes-legal-disclosure",
+      "description": "Weakens or removes jurisdiction-required disclosures or attorney-close routing."
+    },
+    {
+      "id": "gate-theater",
+      "description": "Adds an approval step that does not inspect evidence or authorization."
+    },
+    {
+      "id": "strips-provenance",
+      "description": "Normalizes facts while discarding source identity."
+    }
+  ],
+  "approvalGates": {
+    "autoApproveMax": 49,
+    "reviewMin": 50,
+    "shipMin": 75,
+    "rules": [
+      "Any hard-fail veto blocks ship regardless of score.",
+      "Credits may raise score but cannot clear a veto.",
+      "Scores below reviewMin stay draft; reviewMin–shipMin-1 need human approval; shipMin+ may ship if no veto."
+    ]
+  },
+  "credits": {
+    "maxTotal": 15,
+    "catalog": [
+      {
+        "id": "audit-events",
+        "points": 5,
+        "description": "Emits reviewable audit events for automated and human steps."
+      },
+      {
+        "id": "idempotent-ingest",
+        "points": 5,
+        "description": "Re-ingest cannot duplicate operating actions."
+      },
+      {
+        "id": "cost-ledger-entry",
+        "points": 3,
+        "description": "Ships with a complete dollar cost ledger stub."
+      },
+      {
+        "id": "operator-explainable",
+        "points": 2,
+        "description": "Outcome is explainable in one operator sentence without hidden scores."
+      }
+    ]
+  }
+}
