@@ -1,0 +1,23 @@
+{
+  "name": "arep",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AREP — Tradewind permanent product-quality matrix and competitive intel",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "intel:score": "tsx src/cli/score.ts",
+    "intel:publish": "tsx src/cli/publish.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.9"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "product": "Tradewind DealFlow",
+  "purpose": "Ten-platform competitive benchmark for permanent product decisions. Each stance is Copy (adopt pattern), Improve (keep intent, raise the bar), or Avoid (anti-pattern).",
+  "updated": "2026-08-14",
+  "platforms": [
+    {
+      "id": "propstream",
+      "name": "PropStream",
+      "category": "list-and-skiptrace",
+      "stance": "copy",
+      "summary": "Fast list pull + skip-trace packaging that operators already trust for sourcing.",
+      "copy": [
+        "Distress signal tags that map to operator language",
+        "Export that survives re-ingest without inventing new primary keys"
+      ],
+      "improve": [
+        "Attach source provenance to every imported field",
+        "Refuse silent overwrite when a second list disagrees"
+      ],
+      "avoid": [
+        "Presenting enrichment confidence as fact",
+        "Bundling outreach sends into the list pull"
+      ]
+    },
+    {
+      "id": "batchleads",
+      "name": "BatchLeads",
+      "category": "list-and-dialer",
+      "stance": "improve",
+      "summary": "High-velocity list + dialer stack optimized for volume outreach.",
+      "copy": [
+        "Clear distress filters that operators can explain",
+        "Campaign-ready exports with stable contact rows"
+      ],
+      "improve": [
+        "Separate sourcing from action — never auto-dial from intake",
+        "Surface conflicting owner/phone facts instead of picking a winner"
+      ],
+      "avoid": [
+        "Volume metrics that reward unsafe contact attempts",
+        "Hiding authorization boundaries behind 'smart dial'"
+      ]
+    },
+    {
+      "id": "dealmachine",
+      "name": "DealMachine",
+      "category": "field-sourcing",
+      "stance": "copy",
+      "summary": "Field-first capture that keeps the operator in the loop while driving.",
+      "copy": [
+        "Operator-authored notes as first-class evidence",
+        "Capture that preserves who recorded the observation and when"
+      ],
+      "improve": [
+        "Normalize field notes without stripping provenance",
+        "Queue conflicts when assessor data disagrees with drive-by"
+      ],
+      "avoid": [
+        "Gamified lead counts that ignore underwriting readiness"
+      ]
+    },
+    {
+      "id": "propertyradar",
+      "name": "PropertyRadar",
+      "category": "market-intel",
+      "stance": "improve",
+      "summary": "Deep property/event intelligence with strong filter grammar.",
+      "copy": [
+        "Event timelines that make distress narrative reviewable",
+        "Filter language that maps to underwriting questions"
+      ],
+      "improve": [
+        "Keep competing event interpretations visible until operator resolve",
+        "Price underwriting honesty above dashboard density"
+      ],
+      "avoid": [
+        "Dense charts that compress uncertainty into a single score"
+      ]
+    },
+    {
+      "id": "freedomsoft",
+      "name": "FreedomSoft",
+      "category": "wholesale-crm",
+      "stance": "improve",
+      "summary": "Wholesale CRM with pipeline stages and buyer matching.",
+      "copy": [
+        "Explicit pipeline stages that match wholesale language",
+        "Buyer-box matching as an operator-assisted step"
+      ],
+      "improve": [
+        "Typed states that refuse illegal transitions",
+        "Assignment / offer actions require explicit operator decision"
+      ],
+      "avoid": [
+        "Stage theater that auto-advances without evidence",
+        "One-click blast that bypasses review"
+      ]
+    },
+    {
+      "id": "reiblackbook",
+      "name": "REI BlackBook",
+      "category": "wholesale-crm",
+      "stance": "improve",
+      "summary": "Long-running wholesale CRM with marketing automation hooks.",
+      "copy": [
+        "Persistent deal records across long cycles",
+        "Buyer relationship memory that survives campaign churn"
+      ],
+      "improve": [
+        "Marketing automation stays behind the action boundary",
+        "Audit trail for every automated vs human decision"
+      ],
+      "avoid": [
+        "Marketing drip that pretends to be underwriting"
+      ]
+    },
+    {
+      "id": "investorfuse",
+      "name": "InvestorFuse",
+      "category": "ops-automation",
+      "stance": "avoid",
+      "summary": "Ops automation that often collapses review into templated sends.",
+      "copy": [
+        "Checklist discipline for repeatable stages"
+      ],
+      "improve": [
+        "Checklists as evidence prompts, not silent pass gates"
+      ],
+      "avoid": [
+        "Auto-send sequences from incomplete intake",
+        "Treating template completion as authorization"
+      ]
+    },
+    {
+      "id": "podio-diy",
+      "name": "Podio / Airtable DIY",
+      "category": "diy-ops",
+      "stance": "copy",
+      "summary": "Flexible DIY ops boards teams already understand.",
+      "copy": [
+        "Operator-visible fields with no hidden score engine",
+        "Cheap iteration on workflow shape"
+      ],
+      "improve": [
+        "Add typed transitions and provenance without losing transparency",
+        "Replace spreadsheet formulas that fabricate ARVs"
+      ],
+      "avoid": [
+        "Unbounded schema drift with no conflict model"
+      ]
+    },
+    {
+      "id": "spreadsheet",
+      "name": "Spreadsheet chaos",
+      "category": "baseline",
+      "stance": "avoid",
+      "summary": "The default competitor: shared sheets with silent edits and no provenance.",
+      "copy": [
+        "Immediate inspectability of every cell"
+      ],
+      "improve": [
+        "Keep inspectability while adding typed state and audit events"
+      ],
+      "avoid": [
+        "Silent cell overwrite as the conflict model",
+        "Hidden macros that invent values",
+        "No distinction between source fact and operator decision"
+      ]
+    },
+    {
+      "id": "listsource",
+      "name": "ListSource / CoreLogic-style pulls",
+      "category": "data-vendor",
+      "stance": "copy",
+      "summary": "Vendor list pulls that feed authorized intake when treated as evidence, not truth.",
+      "copy": [
+        "Stable vendor record IDs for re-ingest idempotency",
+        "Clear field dictionaries that can be cited in review"
+      ],
+      "improve": [
+        "Label every field with vendor + pull timestamp",
+        "Queue material disagreements across pulls"
+      ],
+      "avoid": [
+        "Treating vendor enrichment as operator-verified fact",
+        "Building outreach on first pull without distress validation"
+      ]
+    }
+  ]
+}

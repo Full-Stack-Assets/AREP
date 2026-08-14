@@ -1,0 +1,22 @@
+{
+  "id": "conflict-queue-v1",
+  "title": "Material field conflict queue",
+  "summary": "When two authorized sources disagree on a material field, both values stay attached and the record enters in_conflict until an operator resolves or defers.",
+  "pillarIds": ["source-provenance", "conflict-visibility", "operator-control"],
+  "churnDriverIds": ["silent-overwrite", "lost-provenance"],
+  "priorityRank": 1,
+  "dimensionScores": {
+    "pillarAlignment": 36,
+    "churnReduction": 18,
+    "priorityFit": 20,
+    "operatorClarity": 9,
+    "reversibility": 8
+  },
+  "creditIds": ["audit-events", "idempotent-ingest", "cost-ledger-entry", "operator-explainable"],
+  "hardFailIds": [],
+  "estimatedCostUsd": {
+    "build": 4200,
+    "runMonthly": 40,
+    "riskReserve": 500
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "auto-blast-offers",
+  "title": "Auto-blast offers on ingest",
+  "summary": "Silently overwrite owner phone from enrichment and auto-send LOIs.",
+  "dimensionScores": {
+    "pillarAlignment": 5,
+    "churnReduction": 0,
+    "priorityFit": 0,
+    "operatorClarity": 2,
+    "reversibility": 1
+  },
+  "creditIds": ["audit-events"],
+  "hardFailIds": ["fabricates-data", "silent-overwrite", "crosses-action-boundary"]
+}
